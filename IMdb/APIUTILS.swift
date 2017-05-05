@@ -29,7 +29,7 @@ struct Urls {
 
 
 struct Metodos {
-    let METODO_TOP = "es/rss/topmovies/limit=99/json"
+    let METODO_TOP = "es/rss/topmovies/limit=200/json"
     let METODO_SEARCH = "search"
 }
 

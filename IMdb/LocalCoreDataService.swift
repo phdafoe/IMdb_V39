@@ -57,6 +57,8 @@ class LocalCoreDataservice{
                     }
                     order += 1
                 }
+                //metodo de remover lo no favoritos
+                
                 remoteHandler(self.queryTopMovies())
                 
             }else{

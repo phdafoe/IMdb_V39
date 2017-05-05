@@ -28,14 +28,14 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ulh-cR-E57">
                                 <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tQH-QE-cu0">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="tQH-QE-cu0">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="KeJ-NC-muS">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="KeJ-NC-muS" customClass="IMDetailCustomCell" customModule="IMdb" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -54,6 +54,9 @@
                                             <constraint firstAttribute="trailing" secondItem="xNd-sw-KqV" secondAttribute="trailing" id="t87-1J-rXd"/>
                                         </constraints>
                                         <size key="customSize" width="113" height="170"/>
+                                        <connections>
+                                            <outlet property="myImageMovie" destination="xNd-sw-KqV" id="CY6-sh-b7z"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -71,19 +74,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="5KN-1D-8C9"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="u1F-d0-bDJ" id="jPs-2I-hoy"/>
+                        <outlet property="myCollectionView" destination="ulh-cR-E57" id="Hf7-Qa-ZJG"/>
+                        <outlet property="mySearchBar" destination="2b0-ug-Wyh" id="ump-LA-2bn"/>
                         <segue destination="GZg-Bq-cfQ" kind="show" identifier="detailSegue" id="hh0-Qh-hv6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="u1F-d0-bDJ">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="wFb-Ih-K6g"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="iDa-cC-Tk8"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="eFM-x5-KWY"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="7ax-mm-2OP"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1916" y="-646.32683658170924"/>
         </scene>
@@ -128,7 +124,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="0Yz-Sw-NMr">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="0Yz-Sw-NMr" customClass="IMDetailCustomCell" customModule="IMdb" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -147,6 +143,9 @@
                                             <constraint firstAttribute="bottom" secondItem="sp8-RO-FOu" secondAttribute="bottom" id="zjQ-ub-wGc"/>
                                         </constraints>
                                         <size key="customSize" width="113" height="170"/>
+                                        <connections>
+                                            <outlet property="myImageMovie" destination="sp8-RO-FOu" id="6Ko-6g-Lr0"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -337,6 +336,6 @@
         <image name="ver-icon" width="25" height="10"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EUV-Ko-kR6"/>
+        <segue reference="hh0-Qh-hv6"/>
     </inferredMetricsTieBreakers>
 </document>

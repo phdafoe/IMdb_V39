@@ -10,4 +10,6 @@ import UIKit
 
 class IMDetailCustomCell: UICollectionViewCell {
     
+    @IBOutlet weak var myImageMovie: UIImageView!
+    
 }
