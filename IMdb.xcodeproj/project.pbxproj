@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4B35A7166DF5D06656685791 /* Pods_IMdb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9540E13054C65CF14B368902 /* Pods_IMdb.framework */; };
+		8B01BC1A1EBCCB480010E6B8 /* IMListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B01BC191EBCCB480010E6B8 /* IMListMoviesViewController.swift */; };
+		8B01BC1C1EBCCB640010E6B8 /* IMListFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B01BC1B1EBCCB640010E6B8 /* IMListFavoriteViewController.swift */; };
+		8B01BC1E1EBCCB9B0010E6B8 /* IMDetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B01BC1D1EBCCB9B0010E6B8 /* IMDetailMovieViewController.swift */; };
+		8B01BC201EBCCBBB0010E6B8 /* IMDetailCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B01BC1F1EBCCBBB0010E6B8 /* IMDetailCustomCell.swift */; };
+		8B01BC231EBCE2290010E6B8 /* LocalCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B01BC221EBCE2290010E6B8 /* LocalCoreDataService.swift */; };
 		8B0C37AA1EB3B2BD00F2698C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0C37A91EB3B2BD00F2698C /* AppDelegate.swift */; };
 		8B0C37AF1EB3B2BD00F2698C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C37AD1EB3B2BD00F2698C /* Main.storyboard */; };
 		8B0C37B11EB3B2BD00F2698C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0C37B01EB3B2BD00F2698C /* Assets.xcassets */; };
@@ -26,6 +31,11 @@
 /* Begin PBXFileReference section */
 		379463CA5AE22AFE120FF286 /* Pods-IMdb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMdb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMdb/Pods-IMdb.debug.xcconfig"; sourceTree = "<group>"; };
 		3DDAC76530CCE5240F831FBB /* Pods-IMdb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMdb.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMdb/Pods-IMdb.release.xcconfig"; sourceTree = "<group>"; };
+		8B01BC191EBCCB480010E6B8 /* IMListMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMListMoviesViewController.swift; sourceTree = "<group>"; };
+		8B01BC1B1EBCCB640010E6B8 /* IMListFavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMListFavoriteViewController.swift; sourceTree = "<group>"; };
+		8B01BC1D1EBCCB9B0010E6B8 /* IMDetailMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMDetailMovieViewController.swift; sourceTree = "<group>"; };
+		8B01BC1F1EBCCBBB0010E6B8 /* IMDetailCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMDetailCustomCell.swift; sourceTree = "<group>"; };
+		8B01BC221EBCE2290010E6B8 /* LocalCoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCoreDataService.swift; sourceTree = "<group>"; };
 		8B0C37A61EB3B2BD00F2698C /* IMdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0C37A91EB3B2BD00F2698C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B0C37AE1EB3B2BD00F2698C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +78,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B01BC211EBCCBC80010E6B8 /* VIEWS_CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				8B01BC191EBCCB480010E6B8 /* IMListMoviesViewController.swift */,
+				8B01BC1B1EBCCB640010E6B8 /* IMListFavoriteViewController.swift */,
+				8B01BC1D1EBCCB9B0010E6B8 /* IMDetailMovieViewController.swift */,
+				8B01BC1F1EBCCBBB0010E6B8 /* IMDetailCustomCell.swift */,
+			);
+			name = VIEWS_CONTROLLERS;
+			sourceTree = "<group>";
+		};
 		8B0C379D1EB3B2BD00F2698C = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0C37A91EB3B2BD00F2698C /* AppDelegate.swift */,
+				8B01BC211EBCCBC80010E6B8 /* VIEWS_CONTROLLERS */,
 				8B0C37C91EB3CD0D00F2698C /* SERVICE */,
 				8B0C37CA1EB3CD1D00F2698C /* MODEL */,
 				8B0C37C31EB3BB2000F2698C /* API */,
@@ -114,6 +136,7 @@
 			children = (
 				8B0C37C71EB3C08700F2698C /* CoreDataStack.swift */,
 				8B0C37CF1EB3D24D00F2698C /* RemoteItunesMovieService.swift */,
+				8B01BC221EBCE2290010E6B8 /* LocalCoreDataService.swift */,
 			);
 			name = SERVICE;
 			sourceTree = "<group>";
@@ -262,12 +285,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B01BC1E1EBCCB9B0010E6B8 /* IMDetailMovieViewController.swift in Sources */,
 				8B0C37CE1EB3CE5F00F2698C /* MovieManager+Maping.swift in Sources */,
 				8B0C37C21EB3BB1B00F2698C /* APIUTILS.swift in Sources */,
+				8B01BC201EBCCBBB0010E6B8 /* IMDetailCustomCell.swift in Sources */,
 				8B0C37AA1EB3B2BD00F2698C /* AppDelegate.swift in Sources */,
+				8B01BC1C1EBCCB640010E6B8 /* IMListFavoriteViewController.swift in Sources */,
 				8B0C37CC1EB3CD4800F2698C /* MovieModel.swift in Sources */,
 				8B0C37C61EB3C04500F2698C /* IMdb.xcdatamodeld in Sources */,
+				8B01BC231EBCE2290010E6B8 /* LocalCoreDataService.swift in Sources */,
 				8B0C37D01EB3D24D00F2698C /* RemoteItunesMovieService.swift in Sources */,
+				8B01BC1A1EBCCB480010E6B8 /* IMListMoviesViewController.swift in Sources */,
 				8B0C37C81EB3C08700F2698C /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
